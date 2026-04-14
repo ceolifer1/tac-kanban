@@ -99,13 +99,13 @@ export default function AuthPage({ onAuth }) {
           <h1 style={styles.logo}>
             <span style={{ color: "var(--accent)" }}>TAC</span> Workspace
           </h1>
-          <p style={styles.subtitle}>Section 8 Workspace</p>
+          <p style={styles.subtitle}>TAC Workspace</p>
         </div>
 
         {error && <div style={styles.errorBox}>{error}</div>}
         {success && <div style={styles.successBox}>{success}</div>}
 
-        {/* ââ LOGIN VIEW ââ */}
+        {/* Ã¢ÂÂÃ¢ÂÂ LOGIN VIEW Ã¢ÂÂÃ¢ÂÂ */}
         {view === "login" && (
           <form onSubmit={handleLogin}>
             <div style={styles.fieldWrap}>
@@ -126,7 +126,7 @@ export default function AuthPage({ onAuth }) {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="â¢â¢â¢â¢â¢â¢â¢â¢"
+                placeholder="Ã¢ÂÂ¢Ã¢ÂÂ¢Ã¢ÂÂ¢Ã¢ÂÂ¢Ã¢ÂÂ¢Ã¢ÂÂ¢Ã¢ÂÂ¢Ã¢ÂÂ¢"
                 style={styles.input}
                 required
                 minLength={6}
@@ -134,7 +134,7 @@ export default function AuthPage({ onAuth }) {
             </div>
 
             <button type="submit" style={styles.btn} disabled={loading}>
-              {loading ? "Please waitâ¦" : "Sign In"}
+              {loading ? "Please waitÃ¢ÂÂ¦" : "Sign In"}
             </button>
 
             <div style={styles.footer}>
@@ -153,7 +153,7 @@ export default function AuthPage({ onAuth }) {
           </form>
         )}
 
-        {/* ââ FORGOT PASSWORD VIEW ââ */}
+        {/* Ã¢ÂÂÃ¢ÂÂ FORGOT PASSWORD VIEW Ã¢ÂÂÃ¢ÂÂ */}
         {view === "forgot" && (
           <form onSubmit={handleForgotPassword}>
             <p style={{ color: "var(--text-dim)", fontSize: 13, marginBottom: 16, lineHeight: 1.5 }}>
@@ -175,7 +175,7 @@ export default function AuthPage({ onAuth }) {
             </div>
 
             <button type="submit" style={styles.btn} disabled={loading}>
-              {loading ? "Sendingâ¦" : "Send Reset Link"}
+              {loading ? "SendingÃ¢ÂÂ¦" : "Send Reset Link"}
             </button>
 
             <div style={styles.footer}>
@@ -190,7 +190,7 @@ export default function AuthPage({ onAuth }) {
           </form>
         )}
 
-        {/* ââ RESET PASSWORD VIEW (from email link) ââ */}
+        {/* Ã¢ÂÂÃ¢ÂÂ RESET PASSWORD VIEW (from email link) Ã¢ÂÂÃ¢ÂÂ */}
         {view === "reset" && (
           <form onSubmit={handleResetPassword}>
             <p style={{ color: "var(--text-dim)", fontSize: 13, marginBottom: 16, lineHeight: 1.5 }}>
@@ -225,7 +225,7 @@ export default function AuthPage({ onAuth }) {
             </div>
 
             <button type="submit" style={styles.btn} disabled={loading}>
-              {loading ? "Updatingâ¦" : "Update Password"}
+              {loading ? "UpdatingÃ¢ÂÂ¦" : "Update Password"}
             </button>
 
             <div style={styles.footer}>
