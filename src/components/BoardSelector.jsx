@@ -100,11 +100,18 @@ export default function BoardSelector({ boards, userId, onSelect, onRefresh, onL
   return (
     <div style={styles.container}>
       <div style={styles.inner}>
+        {/* Breadcrumb */}
+        <div style={{ marginBottom: 20 }}>
+          <a href="https://ceolifer1.github.io/kanban-hub/" style={{ color: "var(--text-dim)", fontSize: 13, textDecoration: "none", fontWeight: 500 }}>
+            ← Back to Workspaces
+          </a>
+        </div>
+
         {/* Header */}
         <div style={styles.header}>
           <div>
             <h1 style={styles.logo}>
-              <span style={{ color: "var(--accent)" }}>Findmysec8</span>.com
+              <span style={{ color: "var(--accent)" }}>TAC</span> Workspace
             </h1>
             <p style={styles.subtitle}>Select a board to get started</p>
           </div>
